@@ -35,3 +35,17 @@ class EV extends Car {
         console.log(`${this.make} going at ${this.speed} km/h, with a charge of ${this.charge}%`)
     }
 }
+
+// Testing the EV class
+const tesla = new EV('Tesla', 120, 23)
+
+tesla.accelerate(); // "Tesla going at 135 km/h, with a charge of 22%"
+
+tesla.brake(); // "Tesla going at 135 km/h"
+
+tesla.chargeBattery(50);
+console.log(`${tesla.make} battery charged to ${tesla.charge}%`); // "Tesla battery charged to 50%"
+
+// Multiple Accelerations
+tesla.accelerate(); // "Tesla going at 155 km/h, with a charge of 49%"
+tesla.accelerate(); // "Tesla going at 175 km/h, with a charge of 48%"
