@@ -24,4 +24,8 @@ class EV extends Car {
         super(make, speed);
         this.charge = charge;
     }
+// EV chargeBattery Method
+    chargeBattery(chargeTo) {
+        this.charge = chargeTo;
+    }
 }
